@@ -1,0 +1,34 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-page background image */
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('images/portrait.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10vh;
+}
+
+/* Green text box in lower third */
+.overlay-text {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+    color: limegreen;
+    font-size: 4rem; /* Large text */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 20px 50px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
