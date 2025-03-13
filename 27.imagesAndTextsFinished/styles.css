@@ -1,0 +1,62 @@
+/* Reset margin, padding, and ensure full-page layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Set Arial as the primary font */
+}
+
+/* Full-screen background overlay */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/image1.jpg'); /* Default background */
+    transition: background-image 1s ease-in-out;
+    z-index: -1;
+}
+
+/* Scrollable content container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    padding: 50px 0;
+}
+
+/* Spacer to create spacing between text boxes */
+.spacer {
+    height: 50vh;
+}
+
+/* Style for text boxes */
+.text-box {
+    background: rgba(255, 255, 255, 0.4); /* Semi-transparent */
+    padding: 15px 50px;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 50vh auto; /* Add spacing between text boxes */
+    color: black;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Ensure text adapts for smaller screens */
+@media (max-width: 768px) {
+    .text-box {
+        font-size: 4vw;
+        padding: 15px 30px;
+        width: 95%;
+    }
+}
